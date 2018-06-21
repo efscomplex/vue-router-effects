@@ -1,0 +1,35 @@
+  .bounce-enter-active {
+    animation: bounce-in .5s;
+  }
+
+  .bounce-leave-active {
+    animation: bounce-out .8s;
+  }
+
+  @keyframes bounce-in {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    90% {
+      transform: translateX(50px);
+      opacity: .7;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes bounce-out {
+    0% {
+      transform: scale(1);
+    }
+    20% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(0);
+      opacity: 0;
+    }
+  }
